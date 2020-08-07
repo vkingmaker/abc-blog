@@ -20,6 +20,6 @@ class BlogPolicy
      */
     public function create(User $user)
     {
-        return $user->email !== 'monday.akubudike@abc.com';
+        return $user->email === 'monday.akubudike@abc.com';
     }
 }
