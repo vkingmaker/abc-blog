@@ -12,7 +12,7 @@ class Contacts extends Model
         parent::boot();
 
         static::created(function () {
-            \Mail::to(auth()->user()->email)->send(new CommentCreated);
+            \Mail::to('it@armpension.com')->send(new CommentCreated);
         });
     }
 
